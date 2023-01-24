@@ -1,0 +1,44 @@
+.kind-of-news{
+    text-decoration: none;
+    color: #fff;
+    background: #ff0303;
+    padding: 4px 10px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+    .date{
+        display: block;
+        font-weight: 400;
+        font-size: 18px;
+        margin: 0;
+        font-style: italic;
+    }
+.btn{
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #1e1e1e;
+    border: 1px solid #1e1e1e;
+    @include pt;
+    padding: 12px 20px 15px;
+    @include transition;
+    b{
+        margin: 0 0 0 20px;
+        font-size: 20px;
+        font-weight: 20px;
+    }
+    &:hover{
+        color: #ff0303;
+        border: 1px solid #ff0303;
+    }
+}
+.social-network a{
+    color: #c1c1c1;
+    @include transition;
+    &:hover{
+        color: #ff0303;
+    }
+}

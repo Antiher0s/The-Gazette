@@ -9,12 +9,10 @@
         text-decoration: none;
         text-transform: uppercase;
         color: rgba(0, 0, 0, 0.75);
+        @include transition;
         &:last-of-type{
             font-size: 18px;
             color: #000;
-        }
-        &:hover{
-            
         }
     }
 }
@@ -22,6 +20,9 @@
     width: 55%;
     display: flex;
     justify-content: space-between;
+        a:hover{
+            color:#ff0303;
+        }
         a:first-of-type{
             color:#ff0303;
             };

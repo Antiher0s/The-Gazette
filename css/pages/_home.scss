@@ -1,0 +1,225 @@
+// SWIPPER - UP
+.swipper{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    .swipper-news{
+        position: relative;
+        height: 580px;
+        overflow: hidden;
+        img{
+            position: absolute;
+            left: -110px;
+            height: 100%;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.411);
+            z-index: 1;
+        }
+    }
+    .swipper-text-content{
+        position: absolute;
+        top: 40px;
+        left: 60px;
+        z-index: 2;
+        a{
+            text-decoration: none;
+            color: #fff;
+            @include transition;
+            &:not(.kind-of-news):hover{
+                color: #ff0303;;
+            }
+
+        }
+        h2{
+            letter-spacing: 1px;
+            margin: 20px 0 10px;
+            font-family: 'PT Serif', serif;
+            font-size: 40px;
+            font-weight: 300;
+            
+        }
+    }
+}
+// MAIN ARTICLES
+.main-wrapper{
+    margin: 100px auto;
+    width: 1100px;
+    h1{
+        @include pt;
+        font-size: 48px;
+        margin: 20px 0 15px;
+        font-weight: 400;
+    }
+    .date{
+        font-weight: 300;
+        color: #9f9f9f;
+    }
+}
+// TOP ARTICLES
+.top{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    // COLONNE GAUCHE
+    .column-left{
+        grid-column: 1/4;
+        img{
+            width: 100%;
+        }
+    }
+    p{
+    color: #9f9f9f;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.8;
+    margin: 0 0 40px;
+    }
+}
+// BIG ARTICLE
+.big{
+    img{
+        margin: 50px 0 30px;
+    }
+    >div{
+        display: flex;
+        justify-content: space-between;
+        .social-network{
+            margin-top: 15px;
+            font-size: 18px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+        
+    }
+}
+// TODAY'S MOST POPULAR
+.popular{
+    margin: 100px 0;
+    >h2{
+        padding-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border-bottom: 2px solid #e0e0e0;
+        color: #3a3a3a;
+        @include roboto;
+        font-weight: 400;
+    }
+}
+.small{
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: 264px auto;
+    .popular-text-content{
+        padding-left: 30px;
+        h2{
+            @include pt;
+            font-size: 29px;
+            font-weight: 400;
+        }
+        .date{ 
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        .comments{
+            font-size: 12px;
+            letter-spacing: 1px;
+            font-weight: 500;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #3a3a3a;
+        }
+        p{
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 2;
+        }
+    }
+}
+// COLONNE DROITE
+.column-right{
+    grid-column:  4/5;
+}
+h2{
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #3a3a3a;
+    @include roboto;
+    font-weight: 400;
+}
+// BREAKING NEWS
+.bn{
+   
+    a{
+        text-decoration: none;
+    }
+    .bn-article{
+        position: relative;
+        margin-bottom: 30px;
+        &::before{
+            content: '';
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(189,189,189,0) 65%, rgba(0,0,0,0.9752101524203431) 100%);
+            position: absolute;
+            
+        }
+    }
+    img{
+        width: 100%;
+    }
+}
+.bn-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    &::before{
+        content: '';
+        width: 100%;
+        height: 40px;
+        position: absolute;
+
+    }
+    .bn-kind{
+        width: 100%;
+        height: 30px;
+        background: rgba(0, 0, 0, 0.538);
+        
+        span{
+            width: 130px;
+            padding: 8px 15px;
+            height: 30px;
+            color: #fff;
+            background: #ff0303;
+            font-size: 12px;
+            text-transform: uppercase;
+            position: absolute;
+            top: 0;
+        }
+    }
+    h4{
+        margin-top: 170px;
+        margin-left: 20px;
+        font-size: 18px;
+        @include pt;
+        font-weight: 400;
+        line-height: 1.2;
+        color: #fff;
+    }
+}
+// DON'T MISS
+.dont-miss{
+    .dm-wrapper{
+        
+    }
+}

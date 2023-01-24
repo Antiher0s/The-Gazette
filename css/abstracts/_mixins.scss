@@ -1,3 +1,9 @@
 @mixin transition($secondes : .3s, $effet : ease-in-out) {
     transition:$secondes all $effet;
 }
+@mixin pt() {
+    font-family: 'PT serif', serif;
+}
+@mixin roboto() {
+    font-family: 'Roboto', sans-serif;
+}
