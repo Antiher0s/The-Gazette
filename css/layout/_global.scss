@@ -1,3 +1,6 @@
+main{
+    position: relative;
+}
 .kind-of-news{
     text-decoration: none;
     color: #fff;
@@ -26,6 +29,7 @@
     @include pt;
     padding: 12px 20px 15px;
     @include transition;
+    cursor: pointer;
     b{
         margin: 0 0 0 20px;
         font-size: 20px;
@@ -71,4 +75,23 @@ p{
 // .filtre{
     
 // }
+// BOUTON SCROLL UP
+.btn-scroll-up{
+    position: fixed;
+    right: 55px;
+    bottom: 0;
+    background: #ff034a;
+    color: #fff;
+    box-shadow: 0px 0px 2px 2px #00000027;
+    transform: translateY(100%);
+    @include transition;
+    i{
+        font-size: 18px;
+        padding: 12px 14px;
+    }
+    &.--active{
+        transform: translateY(0);
+    }
+
+}
 

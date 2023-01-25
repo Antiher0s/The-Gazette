@@ -11,14 +11,18 @@
 
 </head>
 <body>
+    <div id="up"></div>
+
     <!-- HEADER -->
     <header>
-        <div class="logo">
-            <a href="index.html"><img src="img/core-img/logo.png" alt="The Gazette"></a>
+        <div class="logo" >
+            <a href="index.html">
+                <img src="img/core-img/logo.png" alt="The Gazette">
+            </a>
         </div>
         <div class="border"></div>
         <!-- NAVIGATION -->
-        <div class="main-nav">
+        <div class="main-nav ">
             <nav>
                 <a href="#">Today</a>
                 <a href="#">Politics</a>
@@ -28,12 +32,94 @@
                 <a href="#">Entertainment</a>
                 <a href="#">Sport</a>
             </nav>
-            <a href="http://google.fr"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <form action="search" class="research">
+                <input class="search" type="email" id="email" placeholder="Input your keyword then press enter...">
+            </form>
+            <a href="#" class="loupe">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
         </div>
     </header>
     <main>
+        <!-- Slider main container -->
+<div class="swiper header">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+            <div class="swipper">
+                <div class="swipper-news">
+                    <a href="#"><img src="img/bg-img/3.jpg" alt="Financial advices"></a>
+                    <div class="swipper-text-content">
+                        <a href="#" class="kind-of-news">Politics</a>
+                        <a href="#">
+                            <h2>Financial advices</h2>
+                        </a>
+                        <a href="#"><span class="date">Marche 29, 2018</span></a>
+                    </div>
+                </div>
+                <div class="swipper-news">
+                    <a href="#"><img src="img/bg-img/2.jpg" alt="The last news live"></a>
+                    <div class="swipper-text-content">
+                        <a href="#" class="kind-of-news">Live</a>
+                        <a href="#">
+                            <h2>The last news live</h2>
+                        </a>
+                        <a href="#"><span class="date">Marche 29, 2018</span></a>
+                    </div>
+                </div>
+                <div class="swipper-news">
+                    <a href="#"><img src="img/bg-img/1.jpg" alt="Crypto world goeas mad"></a>
+                    <div class="swipper-text-content">
+                        <a class="kind-of-news">Crypto</a>
+                        <a href="#">
+                            <h2>Crypto world goeas mad</h2>
+                        </a>
+                        <a href="#"><span class="date">Marche 29, 2018</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Slides -->
+        <div class="swiper-slide">
+            <div class="swipper">
+                <div class="swipper-news">
+                    <a href="#"><img src="img/bg-img/3.jpg" alt="Financial advices"></a>
+                    <div class="swipper-text-content">
+                        <a href="#" class="kind-of-news">Politics</a>
+                        <a href="#">
+                            <h2>Financial advices</h2>
+                        </a>
+                        <a href="#"><span class="date">Marche 29, 2018</span></a>
+                    </div>
+                </div>
+                <div class="swipper-news">
+                    <a href="#"><img src="img/bg-img/2.jpg" alt="The last news live"></a>
+                    <div class="swipper-text-content">
+                        <a href="#" class="kind-of-news">Live</a>
+                        <a href="#">
+                            <h2>The last news live</h2>
+                        </a>
+                        <a href="#"><span class="date">Marche 29, 2018</span></a>
+                    </div>
+                </div>
+                <div class="swipper-news">
+                    <a href="#"><img src="img/bg-img/1.jpg" alt="Crypto world goeas mad"></a>
+                    <div class="swipper-text-content">
+                        <a class="kind-of-news">Crypto</a>
+                        <a href="#">
+                            <h2>Crypto world goeas mad</h2>
+                        </a>
+                        <a href="#"><span class="date">Marche 29, 2018</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
         <!-- SWIPPER -->
-        <div class="swipper">
+        <!-- <div class="swipper">
             <div class="swipper-news">
                 <a href="#"><img src="img/bg-img/3.jpg" alt="Financial advices"></a>
                 <div class="swipper-text-content">
@@ -64,7 +150,7 @@
                     <a href="#"><span class="date">Marche 29, 2018</span></a>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- MAIN ARTICLES -->
         <div class="main-wrapper">
             <!-- TOP ARTICLES -->
@@ -359,7 +445,60 @@
         </div>
         <!-- SWIPPER FOOTER -->
         <div class="swipper-footer">
-            <div class="sf-wrapper">
+            <div class="swiper edito">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- 1er Slides -->
+                    <div class="swiper-slide">
+                        <div class="sf-wrapper">
+                            <a href="#">
+                                <img src="img/blog-img/bitcoin.jpg" alt="Bitcoin">
+                            </a>
+                            <div class="sf-content">
+                                <a class="kind-of-news">Editorial</a>
+                                <a href="">
+                                <h1>Move over, bitcoin. Here comes litecoin</h1>
+                                </a>
+                                <span class="date">March 29, 2016</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices egestas nunc, quis venenatis orci tincidunt id. Fusce commodo blandit eleifend. Nullam viverra tincidunt dolor, at pulvinar dui. Nullam at risus ut ipsum viverra posuere. Aliquam viverra dui tincidunt dolor quis convallis enim. Brice est vraiment le meilleur, sans modestie.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2eme Slides -->
+                    <div class="swiper-slide">
+                        <div class="sf-wrapper">
+                            <a href="#">
+                                <img src="img/blog-img/bitcoin.jpg" alt="Bitcoin">
+                            </a>
+                            <div class="sf-content">
+                                <a class="kind-of-news">Editorial</a>
+                                <a href="">
+                                <h1>Move over, bitcoin. Here comes litecoin</h1>
+                                </a>
+                                <span class="date">March 29, 2016</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices egestas nunc, quis venenatis orci tincidunt id. Fusce commodo blandit eleifend. Nullam viverra tincidunt dolor, at pulvinar dui. Nullam at risus ut ipsum viverra posuere. Aliquam viverra dui tincidunt dolor quis convallis enim. Brice est vraiment le meilleur, sans modestie.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3eme Slides -->
+                    <div class="swiper-slide">
+                        <div class="sf-wrapper">
+                            <a href="#">
+                                <img src="img/blog-img/bitcoin.jpg" alt="Bitcoin">
+                            </a>
+                            <div class="sf-content">
+                                <a class="kind-of-news">Editorial</a>
+                                <a href="">
+                                <h1>Move over, bitcoin. Here comes litecoin</h1>
+                                </a>
+                                <span class="date">March 29, 2016</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices egestas nunc, quis venenatis orci tincidunt id. Fusce commodo blandit eleifend. Nullam viverra tincidunt dolor, at pulvinar dui. Nullam at risus ut ipsum viverra posuere. Aliquam viverra dui tincidunt dolor quis convallis enim. Brice est vraiment le meilleur, sans modestie.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="sf-wrapper">
                 <a href="#"><img src="img/blog-img/bitcoin.jpg" alt="Bitcoin"></a>
                 <div class="sf-content">
                     <a class="kind-of-news">Editorial</a>
@@ -369,8 +508,12 @@
                     <span class="date">March 29, 2016</span>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices egestas nunc, quis venenatis orci tincidunt id. Fusce commodo blandit eleifend. Nullam viverra tincidunt dolor, at pulvinar dui. Nullam at risus ut ipsum viverra posuere. Aliquam viverra dui tincidunt dolor quis convallis enim. Brice est vraiment le meilleur, sans modestie.</p>
                 </div>
-            </div>
+            </div> -->
         </div>
+        <!-- BOUTON SCROLL UP!!!!!!! -->
+        <a href="#up" class="btn-scroll-up">
+            <i class="fa fa-angle-up" aria-hidden="true"></i>
+        </a>
     </main>
     <!-- FOOTER -->
     <footer class="filtre">

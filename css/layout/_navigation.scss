@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-between;
     font-weight: 500;
+    position: relative;
     a{
         text-decoration: none;
         text-transform: uppercase;
@@ -26,4 +27,22 @@
         a:first-of-type{
             color:#ff0303;
             };
+}
+// SEARCH
+.search{
+    width: 700px;
+    height: 35px;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    background: #fff !important;
+    text-transform: none !important;
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 3px;
+}
+.research{
+    display: none;
+}
+.--inactive{
+    display: none;
 }
