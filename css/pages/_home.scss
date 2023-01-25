@@ -48,7 +48,7 @@
 }
 // MAIN ARTICLES
 .main-wrapper{
-    margin: 100px auto;
+    margin: 100px auto 0;
     width: 1100px;
     h1{
         @include pt;
@@ -120,7 +120,7 @@
         padding-left: 30px;
         h2{
             @include pt;
-            font-size: 29px;
+            font-size: 28px;
             font-weight: 400;
         }
         .date{ 
@@ -136,8 +136,9 @@
             color: #3a3a3a;
         }
         p{
+            font-weight: 400;
         margin-top: 20px;
-        font-size: 14px;
+        font-size: 13.5px;
         line-height: 2;
         }
     }
@@ -145,21 +146,22 @@
 // COLONNE DROITE
 .column-right{
     grid-column:  4/5;
+    h2{
+        margin: 0 0 25px;
+        padding-bottom: 18px;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border-bottom: 1px solid #e0e0e0;
+        color: #3a3a3a;
+        @include roboto;
+        font-weight: 400;
+    }
+    
 }
-h2{
-    padding-bottom: 20px;
-    margin-bottom: 30px;
-    font-size: 18px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border-bottom: 1px solid #e0e0e0;
-    color: #3a3a3a;
-    @include roboto;
-    font-weight: 400;
-}
+
 // BREAKING NEWS
 .bn{
-   
     a{
         text-decoration: none;
     }
@@ -219,7 +221,176 @@ h2{
 }
 // DON'T MISS
 .dont-miss{
+    margin-bottom: 25px;
     .dm-wrapper{
-        
+        display: grid;
+        row-gap: 25px;
     }
+    .dm{
+        display: grid;
+        grid-template-columns: 70px auto;
+        gap: 20px;
+        img{
+            width: 100%;
+        }
+        a{  
+            font-size: 15px;
+            font-weight: 400;
+            text-decoration: none;
+            color: #000;
+            @include transition;
+            @include pt;
+            &:hover{
+                color: #ff0303;
+            }
+        }
+        .date{
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    }
+}
+// ADVERT
+.advert{
+    img{
+        margin-bottom: 25px;
+    }
+}
+
+// BOTTOM ARTICLES
+.bottom{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 25px;
+    margin-bottom: 100px;
+    img{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    a:not(.kind-of-news){
+        color: #000;
+        text-decoration: none;
+    }
+    .bbn-content{
+        padding-bottom: 20px;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    h3{
+        @include pt;
+        font-weight: 400;
+        font-size: 20px;
+        margin: 15px 0;
+    }
+    .date{
+        font-size: 14px;
+    }
+    
+
+}
+// BIG BOTTOM NEWS
+.bbn:first-of-type{
+    grid-area: 1/1/3/3;
+}
+.sbn:first-of-type{
+    grid-area: 3/1/4/2;
+}
+.sbn:nth-of-type(2){
+    grid-area: 4/1/5/2;
+}
+.sbn:nth-of-type(3){
+    grid-area: 3/2/4/3;
+}
+.sbn:nth-of-type(4){
+    grid-area: 4/2/5/3;
+}
+.bbn:last-of-type{
+    grid-area: 1/5/3/7;
+}
+// MORE VIDEO
+.more-video{
+    background: #f6f6f6;
+    width: 100%;
+    .mv-wrapper{
+        width: 1100px;
+        margin: 0 auto;
+        padding: 100px 0;
+    }
+}
+.mv-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 2fr);
+    gap: 30px;
+    a{
+        text-decoration: none;
+        h3{
+        font-size: 18px;
+        margin: 15px 0 0;
+        font-weight: 400;
+        color: #000;
+        line-height: 30px;
+        }
+    }
+    .img-wrapper{
+        position: relative;
+        display: block;
+        i{
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+        img{
+            width: 100%;
+            display: block;
+        }
+        &:hover::before{
+        content: '';
+            // TRANSITION???
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.65);
+            position: absolute;
+        }
+    }
+}
+// SWIPPER FOOTER
+.swipper-footer{
+    background: #1d1d1d;
+    padding: 100px 0;
+    .sf-wrapper{
+        width: 1100px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 40% auto;
+        gap: 30px;
+        img{
+            width: 100%;
+        }
+    }
+}
+.sf-content{
+    margin-top: 2px;
+    a{
+        text-decoration: none;
+
+    }
+    h1, .date{
+        color: #fff;
+
+    }
+    h1{
+        width: 70%;
+        font-size: 48px;
+        font-weight: 400;
+        @include pt;
+        margin: 15px 0;
+    }
+    .date{
+        font-size: 16px;
+    }
+    
 }

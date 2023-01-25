@@ -16,6 +16,7 @@
         margin: 0;
         font-style: italic;
     }
+    // BOUTON
 .btn{
     font-size: 16px;
     text-transform: uppercase;
@@ -42,3 +43,32 @@
         color: #ff0303;
     }
 }
+h2{
+    @include pt;
+    font-weight: 400;
+    font-size: 1.75rem;
+}
+p{
+    line-height: 35px;
+    color: #9f9f9f;
+}
+// TITLE PAGE
+.title-wrapper{
+    background: #efefef;
+}
+.page-title{
+    margin: 0 auto;
+    width: 1100px;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    span{
+        margin: 30px 0;
+        font-style: italic;
+    }
+}
+// FILTRE IMG
+// .filtre{
+    
+// }
+
